@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="gb-eng">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Journal,Go Green.</title>
+    <link rel="" href=""/>
+  </head>
+  <body>
+    <header class="header">
+      <h1> 𓍊𓋼𓍊𓋼𓍊 ECO JOURNAL, Go Green! </h1>
+      <p> Be kind to your environment. Protect your home.</p>
+    </header>
+    <!--main page details-->
+    <main class="class-container">
+      <section class="about-section">
+        <h3>About Eco Journal.˚˖𓍢ִ໋`🌿:✧˚</h3>
+        <p> 
+          Every action leaves a trace, big or small. We often find ourselves unaware of how much we can do for our environment.
+          Change is Change, and change starts with you! Eco Journal helps you track and see your impact, one midnful action at a time. 
+          This is a gentle and nurturing spce to help you protect your three homes: Your body, The earth, and your Mind. 
+          Start noticing patterns, build habits that help you connect to the world around you.
+          Begin your journey towards a lighter footprint and a greener tomorrow.
+          Remember, no trace is too small, the earth remembers every single one!
+        </p>
+      </section>
+      <section id="sign-in" class="sign-in">
+        <h3>Sign into Eco Journal.</h3>
+        <p>🍃˚.⛰️⋆☁️</p>
+        <form id="sign-in-form">
+          <label for="username"> ❀ </label>
+          <input
+           type="text"
+           id="username"
+           name="username"
+           placeholder="Enter Your Name"
+           required >
+          <button type="submit" id="sign-in-btn"> Start My Journey</button>
+        </form>
+        <p id="welcome-message" class="hidden"></p>
+      </section>
+    </main>
+    <!--navigation links-->
+    <nav class="nav-links">
+      <h4><a href="progress.html"> See My Progress.</a>
+      <a href="vision.html"> Our Vision, Our Mission</a> </h4>
+    </nav>
+    <section id="eco-actions" class="eco-actions">
+      <h3>Add Your Eco-Action</h3>
+      <p>Record your actions of the day, every step counts! </p>
+      <!--action input form-->
+      <div class="action-form">
+        <input 
+        type="text"
+        id="action-input"
+        placeholder="Add your action!🌱"
+        max length="80"
+        >
+        <select id="action-category">
+          <option value="select">Select</option>
+          <option value="recycling">♻️ Recycling</option>
+          <option value="energy">⚡ Clean Energy</option>
+          <option value="transport">🚲 Sustainable Transprot</option>
+          <option value="food">🥬Eco food choice</option>
+          <option value="other"> 🌻Other</option>
+        </select>
+      </div>
+      <ul id="action-list" class="action-list"></ul>
+    </section>
+    <footer class="home footer">
+      <p>%copy; 2025 Eco Journal. All rights Reserved. Created by Joy Muteti</p>
+    </footer>
+    <script src="Scripts/home.js"></script>
+  </body>
+</html>
+ 
