@@ -59,6 +59,9 @@ a{
   text-decoration: none;
   color: #AF7A6D;
 }
+h3{
+  text-decoration: underline;
+}
 footer {
   background: #3E4d3d;
   text-align: center;
