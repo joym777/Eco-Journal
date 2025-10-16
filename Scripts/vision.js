@@ -25,11 +25,21 @@ const ecoQuote = [ //creating an array to store all quotes and authors
     author: "-David Orr"
   },
 ];
+
 //function to randomly select a quote from the array above
 function getRandomQuote () { 
   //selects a random decimal number between 0 and 1, then multiplies by 6 (number of qoutes available)
   //Math.floor rounds down the digit result to match the index of a specific quote (0-5)
   const randomIndex = Math.floor(Math.random() * ecoQuote.length); 
   return ecoQuotes[randomIndex]; //returns the quote with the specific index calculated 
-
 }
+
+//selected quote rendering
+function displayQuote () {
+  const quoteElement = document.getElementById("quote-text");
+  const authorElemnt = document.getElementById("quote-author")
+}
+
+//quote object. stores quote before displaying on UI. 
+const randomQuote = getRandomQuote();
+
