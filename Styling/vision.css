@@ -15,6 +15,13 @@ header{
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
 }
+nav{
+  text-align: center;
+}
+nav :hover{
+  color: #F5F1E3;
+  transition: ease-in-out 0.5s;
+}
 .Vision-container{
   background: #F5F1E3;
   max-width: 800px;

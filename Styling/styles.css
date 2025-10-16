@@ -53,6 +53,7 @@ body {
 }
 .nav-links :hover {
   color: #232536;
+  transition: ease-in-out 0.5s;
 }
 .eco-actions {
   background: #F5F1E3;
@@ -112,6 +113,8 @@ body {
 }
 .others-nav :hover {
   color: #232536;
+  transition: ease-in-out 0.5s;
+
 }
 .info-container{
   text-align: center;
@@ -146,6 +149,7 @@ body {
 .info-container :hover a {
   text-decoration: underline;
   color: #af7a6d;
+  transition: ease-in-out 0.5s;
 }
 .website-container{
   text-align: center;
@@ -163,6 +167,7 @@ body {
 .website-container :hover a{
   text-decoration: underline;
   color: #af7a6d;
+  transition: ease-in-out 0.5s;
 }
 .other-footer{
   background: #102311;
@@ -173,4 +178,3 @@ body {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
-
