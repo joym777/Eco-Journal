@@ -1,45 +1,30 @@
-//quote generator for vision page after every page reload
-const ecoQuote = [ //creating an array to store all quotes and authors
-  {
-    text: "If children do not grow up knowing about nature & appreciating it, they will not undrstand it. And if they do not understand it, they won't protect it."
-    author: "-David Attenborough"
-  },
-   {
-    text: "We are the first generation to feel the impact of climate change, and the last generation that can do something about it."
-    author: "-Barack Obama"
-  },
-   {
-    text: "The earth is what we all have in common"
-    author: "-Wendell Berry"
-  },
-   {
-    text: "If you really think the environment is less important than the economy, try holding your breath while counding your money."
-    author: "-Guy McPherson"
-  },
-   {
-    text: "The future will be gree, or not at all."
-    author: "Jonathon Porritt"
-  },
-   {
-    text: "When we heal the earth, we heal ourselves."
-    author: "-David Orr"
-  },
+//random quote generator script for vision page 
+//selects elements from the vision page html script
+const quoteElement = document.getElementById("quote-text");
+const authorElement = document.getElementById("quote-author");
+
+//creating an array to store all quotes and their authors
+const ecoQuotes = [
+  { text: "The Earth is what we all have in common.", author: "Wendell Berry" },
+  { text: "It's the little things citizens do. That's what will make the difference.", author: "Wangari Maathai" },
+  { text: "You are never too small to make a difference.", author: "Greta Thunberg" },
+  { text: "The natural world is the most precious thing we have, and we need to defend it.", author: "David Attenborough" },
+  { text: "We won’t have a society if we destroy the environment.", author: "Margaret Mead" },
+  { text: "There is no such thing as ‘away’. When we throw anything away, it must go somewhere.", author: "Annie Leonard" }
 ];
 
-//function to randomly select a quote from the array above
-function getRandomQuote () { 
-  //selects a random decimal number between 0 and 1, then multiplies by 6 (number of qoutes available)
-  //Math.floor rounds down the digit result to match the index of a specific quote (0-5)
-  const randomIndex = Math.floor(Math.random() * ecoQuote.length); 
-  return ecoQuotes[randomIndex]; //returns the quote with the specific index calculated 
+//creating function to display the quote at random
+function displayQuote() {
+
+  const randomIndex = Math.floor(Math.random() * ecoQuotes.length); // picks random number between 0-1, multiples by 6 and rounds down dumber to an index (0-5)
+  const randomQuote = ecoQuotes[randomIndex]; // pick that quote from the list with the specific index
+
+  //updating the HTML content for quote to be displayed
+  quoteElement.textContent = `"${randomQuote.text}"`;
+  authorElement.textContent = `~ ${randomQuote.author}`;
 }
 
-//selected quote rendering
-function displayQuote () {
-  const quoteElement = document.getElementById("quote-text");
-  const authorElemnt = document.getElementById("quote-author")
-}
-
-//quote object. stores quote before displaying on UI. 
-const randomQuote = getRandomQuote();
-
+//running the function only when the page loads
+document.addEventListener("DOMContentLoaded", function() {
+  displayQuote();
+});
