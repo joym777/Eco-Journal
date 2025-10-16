@@ -26,6 +26,7 @@ body {
   border-radius: 15px;
   box-sizing: border-box;
   text-align: center;
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 1.5);
 }
 .about-section h3 {
   text-decoration: underline;
@@ -41,6 +42,7 @@ body {
   border-radius: 15px;
   box-sizing: border-box;
   text-align: center;
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 1.5);
 }
 .nav-links{
   text-align: center;
@@ -61,6 +63,7 @@ body {
   padding: 30px;
   border-radius: 15px;
   text-align: center;
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 1.5);
 }
 .eco-actions h3 {
   text-decoration: underline;
@@ -69,9 +72,15 @@ body {
   background-color: #F5F1E3;
   padding: 40px;
   border-radius: 10px;
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 1.5);
 }
 .progress-section h3, h4 {
   text-align: center;
   color: #3E4d3d;
 }
-
+.home-footer {
+  background: #3E4d3d;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 1);
+}
