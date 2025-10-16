@@ -66,6 +66,12 @@ body {
   text-decoration: underline;
 }
 .progress-section{
-  
+  background-color: #F5F1E3;
+  padding: 40px;
+  border-radius: 10px;
+}
+.progress-section h3, h4 {
+  text-align: center;
+  color: #3E4d3d;
 }
 
